@@ -1,1 +1,1 @@
-Projeto de Desenvolvimento de Sistemas II - Sistemas de Informação
+Projeto Acadêmico para a matéria de Desenvolvimento desenvolvimento de Sistemas II, Sitemas de Informação Uniplac.
