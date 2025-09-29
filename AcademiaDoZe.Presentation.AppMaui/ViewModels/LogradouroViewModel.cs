@@ -1,8 +1,6 @@
-﻿//Gabriel Coelho Severino
-using AcademiaDoZe.Application.DTOs;
+﻿using AcademiaDoZe.Application.DTOs;
 using AcademiaDoZe.Application.Interfaces;
 using CommunityToolkit.Mvvm.Input;
-
 namespace AcademiaDoZe.Presentation.AppMaui.ViewModels
 {
     [QueryProperty(nameof(LogradouroId), "Id")]
@@ -54,7 +52,6 @@ namespace AcademiaDoZe.Presentation.AppMaui.ViewModels
             _logradouroService = logradouroService;
             Title = "Detalhes do Logradouro";
         }
-
         public async Task InitializeAsync()
         {
             if (LogradouroId > 0)
@@ -99,7 +96,6 @@ namespace AcademiaDoZe.Presentation.AppMaui.ViewModels
                 IsBusy = false;
             }
         }
-
         [RelayCommand]
         private async Task SearchByCepAsync()
         {
@@ -131,7 +127,6 @@ namespace AcademiaDoZe.Presentation.AppMaui.ViewModels
                 IsBusy = false;
             }
         }
-
         [RelayCommand]
         private async Task SaveLogradouroAsync()
         {
@@ -167,7 +162,6 @@ namespace AcademiaDoZe.Presentation.AppMaui.ViewModels
                 IsBusy = false;
             }
         }
-
         private static bool ValidateLogradouro(LogradouroDTO logradouro)
         {
             const string validationTitle = "Validação";
@@ -203,5 +197,6 @@ namespace AcademiaDoZe.Presentation.AppMaui.ViewModels
             }
             return true;
         }
+
     }
 }

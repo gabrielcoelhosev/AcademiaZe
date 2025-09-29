@@ -1,9 +1,7 @@
-﻿//Gabriel Coelho Severino
-using AcademiaDoZe.Application.DTOs;
+﻿using AcademiaDoZe.Application.DTOs;
 using AcademiaDoZe.Application.Interfaces;
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
-
 namespace AcademiaDoZe.Presentation.AppMaui.ViewModels
 {
     public partial class LogradouroListViewModel : BaseViewModel
@@ -26,7 +24,6 @@ namespace AcademiaDoZe.Presentation.AppMaui.ViewModels
             _logradouroService = logradouroService;
             Title = "Logradouros";
         }
-
         [RelayCommand]
         private async Task AddLogradouroAsync()
         {
@@ -64,66 +61,41 @@ namespace AcademiaDoZe.Presentation.AppMaui.ViewModels
             IsRefreshing = true;
             await LoadLogradourosAsync();
         }
-
         [RelayCommand]
-        private async Task SearchLogradourosAsync()
+        private async Task DeleteLogradouroAsync(LogradouroDTO logradouro)
         {
-            if (IsBusy)
+            if (logradouro == null)
+                return;
+            bool confirm = await Shell.Current.DisplayAlert(
+            "Confirmar Exclusão",
+
+            $"Deseja realmente excluir o logradouro {logradouro.Nome}?",
+            "Sim", "Não");
+            if (!confirm)
                 return;
             try
             {
                 IsBusy = true;
-                // Limpa a lista atual
-                await MainThread.InvokeOnMainThreadAsync(() =>
+                bool success = await _logradouroService.RemoverAsync(logradouro.Id);
+                if (success)
                 {
-                    Logradouros.Clear();
-                });
-                IEnumerable<LogradouroDTO> resultados = Enumerable.Empty<LogradouroDTO>();
-                // Busca os logradouros de acordo com o filtro
-                if (string.IsNullOrWhiteSpace(SearchText))
-                {
-                    resultados = await _logradouroService.ObterTodosAsync() ?? Enumerable.Empty<LogradouroDTO>();
+                    Logradouros.Remove(logradouro);
+                    await Shell.Current.DisplayAlert("Sucesso", "Logradouro excluído com sucesso!", "OK");
                 }
-                else if (SelectedFilterType == "Cidade")
+                else
                 {
-                    resultados = await _logradouroService.ObterPorCidadeAsync(SearchText) ?? Enumerable.Empty<LogradouroDTO>();
+                    await Shell.Current.DisplayAlert("Erro", "Não foi possível excluir o logradouro.", "OK");
                 }
-                else if (SelectedFilterType == "Id" && int.TryParse(SearchText, out int id))
-                {
-                    var logradouro = await _logradouroService.ObterPorIdAsync(id);
-
-                    if (logradouro != null)
-
-                        resultados = new[] { logradouro };
-                }
-                else if (SelectedFilterType == "Cep")
-                {
-                    var logradouro = await _logradouroService.ObterPorCepAsync(SearchText);
-
-                    if (logradouro != null)
-
-                        resultados = new[] { logradouro };
-                }
-                // Atualiza a coleção na thread principal
-                await MainThread.InvokeOnMainThreadAsync(() =>
-                {
-                    foreach (var item in resultados)
-                    {
-                        Logradouros.Add(item);
-                    }
-                    OnPropertyChanged(nameof(Logradouros));
-                });
             }
             catch (Exception ex)
             {
-                await Shell.Current.DisplayAlert("Erro", $"Erro ao buscar logradouros: {ex.Message}", "OK");
+                await Shell.Current.DisplayAlert("Erro", $"Erro ao excluir logradouro: {ex.Message}", "OK");
             }
             finally
             {
                 IsBusy = false;
             }
         }
-
         [RelayCommand]
         private async Task LoadLogradourosAsync()
         {
@@ -163,42 +135,6 @@ namespace AcademiaDoZe.Presentation.AppMaui.ViewModels
             {
                 IsBusy = false;
                 IsRefreshing = false;
-            }
-        }
-
-        [RelayCommand]
-        private async Task DeleteLogradouroAsync(LogradouroDTO logradouro)
-        {
-            if (logradouro == null)
-                return;
-            bool confirm = await Shell.Current.DisplayAlert(
-            "Confirmar Exclusão",
-
-            $"Deseja realmente excluir o logradouro {logradouro.Nome}?",
-            "Sim", "Não");
-            if (!confirm)
-                return;
-            try
-            {
-                IsBusy = true;
-                bool success = await _logradouroService.RemoverAsync(logradouro.Id);
-                if (success)
-                {
-                    Logradouros.Remove(logradouro);
-                    await Shell.Current.DisplayAlert("Sucesso", "Logradouro excluído com sucesso!", "OK");
-                }
-                else
-                {
-                    await Shell.Current.DisplayAlert("Erro", "Não foi possível excluir o logradouro.", "OK");
-                }
-            }
-            catch (Exception ex)
-            {
-                await Shell.Current.DisplayAlert("Erro", $"Erro ao excluir logradouro: {ex.Message}", "OK");
-            }
-            finally
-            {
-                IsBusy = false;
             }
         }
     }

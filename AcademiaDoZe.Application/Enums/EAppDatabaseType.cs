@@ -1,4 +1,4 @@
-﻿// Iago Henrique Schlemper
+﻿//Alisson Rafael da Cruz Velho
 namespace AcademiaDoZe.Application.Enums;
 
 public enum EAppDatabaseType

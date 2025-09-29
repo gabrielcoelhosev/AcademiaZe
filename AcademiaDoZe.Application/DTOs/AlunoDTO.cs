@@ -1,4 +1,4 @@
-﻿//Gabriel Coelho Severino
+﻿//Alisson Rafael da Cruz Velho
 namespace AcademiaDoZe.Application.DTOs;
 
 public class AlunoDTO

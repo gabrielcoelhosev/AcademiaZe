@@ -1,4 +1,4 @@
-﻿// Iago Henrique Schlemper
+﻿//Alisson Rafael da Cruz Velho
 using Konscious.Security.Cryptography;
 using System.Security.Cryptography;
 using System.Text;

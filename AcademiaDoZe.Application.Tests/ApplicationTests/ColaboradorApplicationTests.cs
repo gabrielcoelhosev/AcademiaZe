@@ -1,4 +1,4 @@
-﻿//Gabriel Coelho Severino
+﻿//Alisson Rafael da Cruz Velho
 using AcademiaDoZe.Application.DTOs;
 using AcademiaDoZe.Application.Enums;
 using AcademiaDoZe.Application.Interfaces;
@@ -9,7 +9,7 @@ namespace AcademiaDoZe.Application.Tests;
 public class ColaboradorApplicationTests
 {
     // Configurações de conexão
-    const string connectionString = "Server=localhost;Database=db_academia_do_ze;User Id=root;Password=4457;";
+    const string connectionString = "Server=localhost;Database=db_academia_do_ze;User Id=root;Password=root;";
     const EAppDatabaseType databaseType = EAppDatabaseType.MySql;
     [Fact(Timeout = 60000)]
     public async Task ColaboradorService_Integracao_Adicionar_Obter_Atualizar_Remover()

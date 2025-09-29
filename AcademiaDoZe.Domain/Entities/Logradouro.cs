@@ -1,7 +1,8 @@
-﻿using AcademiaDoZe.Domain.Exceptions;
+﻿//Alisson Rafael da Cruz Velho
+using AcademiaDoZe.Domain.Exceptions;
 using AcademiaDoZe.Domain.Services;
 
-//Gabriel Coelho Severino
+
 namespace AcademiaDoZe.Domain.Entities;
 
 public sealed class Logradouro : Entity

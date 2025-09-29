@@ -1,11 +1,5 @@
-﻿//Gabriel Coelho Severino
-using AcademiaDoZe.Application.Interfaces;
-using AcademiaDoZe.Application.Services;
-using AcademiaDoZe.Application_.Services;
+﻿using AcademiaDoZe.Application.Interfaces;
 using CommunityToolkit.Mvvm.Input;
-using AcademiaDoZe.Application.Interfaces;
-using CommunityToolkit.Mvvm.Input;
-
 namespace AcademiaDoZe.Presentation.AppMaui.ViewModels
 {
     public partial class DashboardListViewModel : BaseViewModel
@@ -14,7 +8,6 @@ namespace AcademiaDoZe.Presentation.AppMaui.ViewModels
         private readonly IAlunoService _alunoService;
         private readonly IColaboradorService _colaboradorService;
         private readonly IMatriculaService _matriculaService;
-
         private int _totalLogradouros;
         public int TotalLogradouros { get => _totalLogradouros; set => SetProperty(ref _totalLogradouros, value); }
         private int _totalAlunos;
@@ -42,7 +35,7 @@ namespace AcademiaDoZe.Presentation.AppMaui.ViewModels
                 var logradourosTask = _logradouroService.ObterTodosAsync();
                 var logradouros = new List<object>();
                 try { logradouros = (await logradourosTask).ToList<object>(); }
-                catch (Exception ex) { await Shell.Current.DisplayAlert("Erro", $"Erro ao carregar logradouros: {ex.Message}", "OK"); }
+                catch (Exception ex) { await Shell.Current.DisplayAlert("Erro", $"Erro ao carregar logradouros: {ex}", "OK"); }
                 TotalLogradouros = logradouros.Count;
                 var alunosTask = _alunoService.ObterTodosAsync();
                 var alunos = new List<object>();

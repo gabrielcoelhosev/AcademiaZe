@@ -1,4 +1,4 @@
-﻿// Iago Henrique Schlemper
+﻿//Alisson Rafael da Cruz Velho
 using System.ComponentModel.DataAnnotations;
 namespace AcademiaDoZe.Application.Enums;
 

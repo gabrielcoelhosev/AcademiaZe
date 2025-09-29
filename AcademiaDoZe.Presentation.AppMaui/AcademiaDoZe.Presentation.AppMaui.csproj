@@ -21,7 +21,7 @@
 		<Nullable>enable</Nullable>
 
 		<!-- Display name -->
-		<ApplicationTitle>AcademiaDoZe.Presentation.AppMaui</ApplicationTitle>
+		<ApplicationTitle>GYM do Zé</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.academiadoze.presentation.appmaui</ApplicationId>
@@ -51,7 +51,7 @@
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
 		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
-
+		
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
 
@@ -71,6 +71,21 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\DashboardListPage.xaml.cs">
+	    <DependentUpon>DashboardListPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\LogradouroListPage.xaml.cs">
+	    <DependentUpon>LogradouroListPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\LogradouroPage.xaml.cs">
+	    <DependentUpon>LogradouroPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\ConfigPage.xaml.cs">
+	    <DependentUpon>ConfigPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Views\DashboardListPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -78,6 +93,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\LogradouroPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ConfigPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

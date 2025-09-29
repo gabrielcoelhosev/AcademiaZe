@@ -1,4 +1,4 @@
-﻿//Gabriel Coelho Severino
+﻿//Alisson Rafael da Cruz Velho
 using AcademiaDoZe.Application.DTOs;
 namespace AcademiaDoZe.Application.Interfaces;
 
