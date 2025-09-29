@@ -1,4 +1,4 @@
-﻿//Alisson Rafael da Cruz Velho
+﻿//Gabriel Coelho Severino
 namespace AcademiaDoZe.Domain.Exceptions;
 
 // classe base para exceções de domínio

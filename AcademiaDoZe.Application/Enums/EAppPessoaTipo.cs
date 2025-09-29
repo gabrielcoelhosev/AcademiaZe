@@ -1,4 +1,4 @@
-﻿//Alisson Rafael da Cruz Velho
+﻿//Gabriel Coelho Severino
 using System.ComponentModel.DataAnnotations;
 namespace AcademiaDoZe.Application.Enums;
 

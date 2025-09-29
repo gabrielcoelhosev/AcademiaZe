@@ -1,4 +1,4 @@
-﻿//Alisson Rafael da Cruz Velho
+﻿//Gabriel Coelho Severino
 using System.Text.RegularExpressions;
 
 namespace AcademiaDoZe.Domain.Services;

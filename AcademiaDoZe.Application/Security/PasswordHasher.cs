@@ -1,4 +1,4 @@
-﻿//Alisson Rafael da Cruz Velho
+﻿//Gabriel Coelho Severino
 using Konscious.Security.Cryptography;
 using System.Security.Cryptography;
 using System.Text;

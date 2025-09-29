@@ -1,4 +1,5 @@
-﻿//Alisson Rafael da Cruz Velho
+﻿
+
 using AcademiaDoZe.Infrastructure.Exceptions;
 using Microsoft.Data.SqlClient;
 using MySql.Data.MySqlClient;

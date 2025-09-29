@@ -1,4 +1,4 @@
-﻿//Alisson Rafael da Cruz Velho
+﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Application.DTOs;
 using AcademiaDoZe.Domain.Entities;
 using AcademiaDoZe.Domain.ValueObjects;

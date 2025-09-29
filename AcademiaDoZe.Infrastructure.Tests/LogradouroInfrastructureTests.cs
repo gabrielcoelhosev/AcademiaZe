@@ -1,4 +1,5 @@
-﻿//Alisson Rafael da Cruz Velho
+﻿
+
 using AcademiaDoZe.Domain.Entities;
 using AcademiaDoZe.Infrastructure.Repositories;
 using AcademiaDoZe.Infrastructure.Tests;

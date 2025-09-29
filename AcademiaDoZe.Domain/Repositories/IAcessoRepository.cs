@@ -1,4 +1,4 @@
-﻿//Alisson Rafael da Cruz Velho
+﻿//Gabriel Coelho Severino
 //using AcademiaDoZe.Domain.Entities;
 
 //namespace AcademiaDoZe.Domain.Repositories;

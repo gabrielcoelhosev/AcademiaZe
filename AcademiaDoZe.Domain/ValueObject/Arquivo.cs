@@ -1,4 +1,5 @@
-﻿//Alisson Rafael da Cruz Velho
+﻿
+
 using AcademiaDoZe.Domain.Exceptions;
 using AcademiaDoZe.Domain.Services;
 
