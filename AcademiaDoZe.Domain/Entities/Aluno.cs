@@ -1,6 +1,4 @@
-﻿
-
-using AcademiaDoZe.Domain.ValueObjects;
+﻿using AcademiaDoZe.Domain.ValueObjects;
 using AcademiaDoZe.Domain.Exceptions;
 using AcademiaDoZe.Domain.Services;
 
@@ -47,4 +45,5 @@ public class Aluno : Pessoa
         return new Aluno(id, nome, cpf, dataNascimento, telefone, email, endereco, numero, complemento, senha, foto);
 
     }
+    //Gabriel Coelho Severino
 }

@@ -1,7 +1,4 @@
-﻿
-
-
-using AcademiaDoZe.Domain.Enums;
+﻿using AcademiaDoZe.Domain.Enums;
 using AcademiaDoZe.Domain.Exceptions;
 using AcademiaDoZe.Domain.ValueObjects;
 using AcademiaDoZe.Domain.Services;
@@ -55,4 +52,4 @@ public class Matricula : Entity
         return new Matricula(id, alunoMatricula, plano, dataInicio, dataFim, objetivo, restricoesMedicas, laudoMedico, 
             observacoesRestricoes);
     }
-}
+}//Gabriel Coelho Severino

@@ -1,5 +1,4 @@
 ﻿
-
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
@@ -18,3 +17,4 @@ public static class EnumExtensions
 }
 // Console.WriteLine( EMatriculaRestricoes.ProblemasRespiratorios.GetDisplayName() );
 // Exibe: Problemas Respiratórios
+//Gabriel Coelho Severino

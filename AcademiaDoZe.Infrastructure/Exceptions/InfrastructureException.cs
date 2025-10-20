@@ -1,4 +1,4 @@
-﻿//Gabriel Coelho Severino
+﻿//Gabriel Coelho Severino da Cruz Velho
 namespace AcademiaDoZe.Infrastructure.Exceptions;
 
 // Classe base para exceções de infraestrutura

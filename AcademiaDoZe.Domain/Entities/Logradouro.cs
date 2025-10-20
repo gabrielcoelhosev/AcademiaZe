@@ -1,5 +1,4 @@
-﻿//Gabriel Coelho Severino
-using AcademiaDoZe.Domain.Exceptions;
+﻿using AcademiaDoZe.Domain.Exceptions;
 using AcademiaDoZe.Domain.Services;
 
 
@@ -49,4 +48,4 @@ public sealed class Logradouro : Entity
         return new Logradouro(id, cep, nome, bairro, cidade, estado, pais);
 
     }
-}
+}//Gabriel Coelho Severino

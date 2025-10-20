@@ -1,6 +1,4 @@
-﻿
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace AcademiaDoZe.Domain.Enums;
 
@@ -10,4 +8,4 @@ public enum EColaboradorVinculo
     CLT = 0,
     [Display(Name = "Estagiário")]
     Estagio = 1
-}
+}//Gabriel Coelho Severino

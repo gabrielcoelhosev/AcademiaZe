@@ -1,6 +1,4 @@
-﻿
-
-using AcademiaDoZe.Application.Enums;
+﻿using AcademiaDoZe.Application.Enums;
 using AcademiaDoZe.Domain.Enums;
 
 namespace AcademiaDoZe.Application.Mappings;
@@ -24,3 +22,4 @@ public static class ColaboradorEnumMappings
         return (EAppColaboradorVinculo)domainVinculo;
     }
 }
+//Gabriel Coelho Severino

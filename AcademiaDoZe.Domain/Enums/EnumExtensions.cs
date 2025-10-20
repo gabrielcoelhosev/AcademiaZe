@@ -1,6 +1,4 @@
-﻿//
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
 namespace AcademiaDoZe.Domain.Enums;
@@ -17,3 +15,4 @@ public static class EnumExtensions
 }
 // Console.WriteLine( EMatriculaRestricoes.ProblemasRespiratorios.GetDisplayName() );
 // Exibe: Problemas Respiratórios
+//Gabriel Coelho Severino

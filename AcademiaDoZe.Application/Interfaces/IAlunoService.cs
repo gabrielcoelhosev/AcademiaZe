@@ -1,5 +1,4 @@
 ﻿
-
 using AcademiaDoZe.Application.DTOs;
 namespace AcademiaDoZe.Application.Interfaces;
 
@@ -10,7 +9,8 @@ public interface IAlunoService
     Task<AlunoDTO> AdicionarAsync(AlunoDTO alunoDto);
     Task<AlunoDTO> AtualizarAsync(AlunoDTO alunoDto);
     Task<bool> RemoverAsync(int id);
-    Task<AlunoDTO> ObterPorCpfAsync(string cpf);
+    Task<IEnumerable<AlunoDTO>> ObterPorCpfAsync(string cpf);
     Task<bool> CpfJaExisteAsync(string cpf, int? id = null);
     Task<bool> TrocarSenhaAsync(int id, string novaSenha);
 }
+//Gabriel Coelho Severino

@@ -1,6 +1,4 @@
-﻿
-
-using AcademiaDoZe.Infrastructure.Exceptions;
+﻿using AcademiaDoZe.Infrastructure.Exceptions;
 using Microsoft.Data.SqlClient;
 using MySql.Data.MySqlClient;
 using System.Data;
@@ -58,4 +56,4 @@ public static class DbProvider
         }
         catch (DbException ex) { throw new InfrastructureException($"ERRO_CRIAR_PARAMETRO", ex); }
     }
-}
+}//Gabriel Coelho Severino

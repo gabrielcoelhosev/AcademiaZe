@@ -1,6 +1,4 @@
-﻿
-
-using AcademiaDoZe.Domain.Entities;
+﻿using AcademiaDoZe.Domain.Entities;
 using AcademiaDoZe.Domain.Enums;
 using AcademiaDoZe.Domain.Exceptions;
 using AcademiaDoZe.Domain.ValueObjects;
@@ -68,4 +66,4 @@ public class MatriculaDomainTests
 
         Assert.Equal("OBJETIVO_OBRIGATORIO", exception.Message);
     }
-}
+}//Gabriel Coelho Severino

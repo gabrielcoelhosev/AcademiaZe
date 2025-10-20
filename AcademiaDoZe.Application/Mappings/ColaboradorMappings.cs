@@ -1,6 +1,4 @@
-﻿
-
-using AcademiaDoZe.Application.DTOs;
+﻿using AcademiaDoZe.Application.DTOs;
 using AcademiaDoZe.Domain.Entities;
 using AcademiaDoZe.Domain.ValueObjects;
 namespace AcademiaDoZe.Application.Mappings;
@@ -66,3 +64,4 @@ public static class ColaboradorMappings
         );
     }
 }
+//Gabriel Coelho Severino

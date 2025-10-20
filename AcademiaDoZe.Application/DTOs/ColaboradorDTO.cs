@@ -1,6 +1,4 @@
-﻿
-
-using AcademiaDoZe.Application.Enums;
+﻿using AcademiaDoZe.Application.Enums;
 
 namespace AcademiaDoZe.Application.DTOs;
 
@@ -21,3 +19,4 @@ public class ColaboradorDTO
     public required EAppColaboradorTipo Tipo { get; set; }
     public required EAppColaboradorVinculo Vinculo { get; set; }
 }
+//Gabriel Coelho Severino

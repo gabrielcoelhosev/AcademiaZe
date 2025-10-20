@@ -1,5 +1,4 @@
-﻿//Gabriel Coelho Severino
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 namespace AcademiaDoZe.Application.Enums;
 
 [Flags]
@@ -20,3 +19,4 @@ public enum EAppMatriculaRestricoes
     [Display(Name = "Remédio Contínuo")]
     RemedioContinuo = 32
 }
+//Gabriel Coelho Severino

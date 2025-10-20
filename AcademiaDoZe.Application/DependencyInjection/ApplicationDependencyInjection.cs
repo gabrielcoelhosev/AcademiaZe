@@ -1,6 +1,4 @@
-﻿
-
-using AcademiaDoZe.Application.Interfaces;
+﻿using AcademiaDoZe.Application.Interfaces;
 using AcademiaDoZe.Application.Services;
 using AcademiaDoZe.Application_.Services;
 using AcademiaDoZe.Domain.Repositories;
@@ -50,3 +48,4 @@ public static class ApplicationDependencyInjection
         return services;
     }
 }
+//Gabriel Coelho Severinojader

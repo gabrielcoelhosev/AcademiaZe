@@ -1,5 +1,4 @@
-﻿//Gabriel Coelho Severino
-using AcademiaDoZe.Application.DTOs;
+﻿using AcademiaDoZe.Application.DTOs;
 using AcademiaDoZe.Application.Interfaces;
 using Moq;
 
@@ -214,3 +213,4 @@ CriarMatriculaPadrao(2)
         _matriculaServiceMock.Verify(s => s.RemoverAsync(matriculaId), Times.Once);
     }
 }
+//Gabriel Coelho Severino

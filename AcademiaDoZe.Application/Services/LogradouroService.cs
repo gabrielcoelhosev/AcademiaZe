@@ -1,7 +1,4 @@
-﻿
-
-
-using AcademiaDoZe.Application.DTOs;
+﻿using AcademiaDoZe.Application.DTOs;
 using AcademiaDoZe.Application.Interfaces;
 using AcademiaDoZe.Application.Mappings;
 using AcademiaDoZe.Domain.Repositories;
@@ -108,3 +105,4 @@ public class LogradouroService : ILogradouroService
 
     }
 }
+//Gabriel Coelho Severino

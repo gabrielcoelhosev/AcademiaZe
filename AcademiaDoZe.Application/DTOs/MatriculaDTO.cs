@@ -1,6 +1,4 @@
-﻿
-
-using AcademiaDoZe.Application.Enums;
+﻿using AcademiaDoZe.Application.Enums;
 
 namespace AcademiaDoZe.Application.DTOs;
 
@@ -16,3 +14,4 @@ public class MatriculaDTO
     public string? ObservacoesRestricoes { get; set; }
     public ArquivoDTO? LaudoMedico { get; set; }
 }
+//Gabriel Coelho Severino

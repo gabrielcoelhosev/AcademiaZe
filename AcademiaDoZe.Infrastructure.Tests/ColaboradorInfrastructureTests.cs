@@ -1,5 +1,4 @@
 ﻿
-
 using AcademiaDoZe.Domain.Entities;
 using AcademiaDoZe.Domain.Enums;
 using AcademiaDoZe.Domain.ValueObjects;
@@ -142,3 +141,4 @@ public class ColaboradorInfrastructureTests : TestBase
         Assert.NotNull(resultado);
     }
 }
+//Gabriel Coelho Severino

@@ -1,6 +1,4 @@
-﻿
-
-using AcademiaDoZe.Domain.Entities;
+﻿using AcademiaDoZe.Domain.Entities;
 using AcademiaDoZe.Domain.Enums;
 using AcademiaDoZe.Domain.Repositories;
 using AcademiaDoZe.Domain.ValueObjects;

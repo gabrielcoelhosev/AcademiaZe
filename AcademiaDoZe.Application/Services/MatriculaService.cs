@@ -1,6 +1,4 @@
-﻿
-
-using AcademiaDoZe.Application.DTOs;
+﻿using AcademiaDoZe.Application.DTOs;
 using AcademiaDoZe.Application.Interfaces;
 using AcademiaDoZe.Application.Mappings;
 using AcademiaDoZe.Domain.Repositories;
@@ -111,3 +109,4 @@ public class MatriculaService : IMatriculaService
 
     }
 }
+//Gabriel Coelho Severino

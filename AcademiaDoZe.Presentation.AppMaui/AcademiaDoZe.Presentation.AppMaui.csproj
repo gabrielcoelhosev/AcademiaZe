@@ -71,6 +71,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\AlunoPage.xaml.cs">
+	    <DependentUpon>AlunoPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\AlunoListPage.xaml.cs">
+	    <DependentUpon>AlunoListPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\DashboardListPage.xaml.cs">
 	    <DependentUpon>DashboardListPage.xaml</DependentUpon>
 	  </Compile>
@@ -83,9 +89,21 @@
 	  <Compile Update="Views\ConfigPage.xaml.cs">
 	    <DependentUpon>ConfigPage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\ColaboradorListPage.xaml.cs">
+	    <DependentUpon>ColaboradorListPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\ColaboradorPage.xaml.cs">
+	    <DependentUpon>ColaboradorPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\AlunoListPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\AlunoPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\DashboardListPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -96,6 +114,12 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\ConfigPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ColaboradorListPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ColaboradorPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

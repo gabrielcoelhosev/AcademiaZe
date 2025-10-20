@@ -1,6 +1,4 @@
-﻿
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace AcademiaDoZe.Domain.Enums;
 
@@ -21,4 +19,4 @@ public enum EMatriculaRestricoes
     ProblemasRespiratorios = 16,
     [Display(Name = "Remédio Contínuo")]
     RemedioContinuo = 32
-}
+}//Gabriel Coelho Severino

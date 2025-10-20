@@ -1,6 +1,4 @@
-﻿
-
-using AcademiaDoZe.Domain.Enums;
+﻿using AcademiaDoZe.Domain.Enums;
 using AcademiaDoZe.Domain.Exceptions;
 using AcademiaDoZe.Domain.Services;
 using AcademiaDoZe.Domain.ValueObjects;
@@ -61,3 +59,4 @@ public class Colaborador : Pessoa
             dataAdmissao, tipo, vinculo);
     }
 }
+//Gabriel Coelho Severino

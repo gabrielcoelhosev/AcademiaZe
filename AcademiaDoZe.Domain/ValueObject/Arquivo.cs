@@ -1,6 +1,4 @@
-﻿
-
-using AcademiaDoZe.Domain.Exceptions;
+﻿using AcademiaDoZe.Domain.Exceptions;
 using AcademiaDoZe.Domain.Services;
 
 namespace AcademiaDoZe.Domain.ValueObjects;

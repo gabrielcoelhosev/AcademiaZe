@@ -1,6 +1,4 @@
-﻿
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 namespace AcademiaDoZe.Application.Enums;
 
 public enum EAppColaboradorTipo
@@ -12,3 +10,4 @@ public enum EAppColaboradorTipo
     [Display(Name = "Instrutor")]
     Instrutor = 2
 }
+//Gabriel Coelho Severino

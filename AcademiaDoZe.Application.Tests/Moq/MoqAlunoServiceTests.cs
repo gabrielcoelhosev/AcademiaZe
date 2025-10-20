@@ -1,6 +1,4 @@
-﻿
-
-using AcademiaDoZe.Application.DTOs;
+﻿using AcademiaDoZe.Application.DTOs;
 using AcademiaDoZe.Application.Interfaces;
 using Moq;
 
@@ -235,3 +233,4 @@ CriarAlunoPadrao(2)
         _alunoServiceMock.Verify(s => s.TrocarSenhaAsync(alunoId, novaSenha), Times.Once);
     }
 }
+//Gabriel Coelho Severino

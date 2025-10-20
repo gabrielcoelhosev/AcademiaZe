@@ -1,6 +1,4 @@
-﻿
-
-using AcademiaDoZe.Domain.Entities;
+﻿using AcademiaDoZe.Domain.Entities;
 using AcademiaDoZe.Domain.Enums;
 using AcademiaDoZe.Domain.ValueObjects;
 using AcademiaDoZe.Infrastructure.Repositories;
@@ -128,23 +126,43 @@ public class MatriculaInfrastructureTests : TestBase
         var resultado = await repoMatriculaTodos.ObterTodos();
         Assert.NotNull(resultado);
     }
-
     [Fact]
     public async Task Matricula_ObterPorId()
     {
         var repoMatricula = new MatriculaRepository(ConnectionString, DatabaseType);
         var repoAluno = new AlunoRepository(ConnectionString, DatabaseType);
 
-        var aluno = await repoAluno.ObterPorCpf("12345678901");
+        // Use o CPF que realmente existe no banco
+        var aluno = await repoAluno.ObterPorCpf("11140608981");
         Assert.NotNull(aluno);
 
-        var matriculas = (await repoMatricula.ObterPorAluno(aluno!.Id)).ToList();
-        Assert.NotEmpty(matriculas);
+        // Garante que exista pelo menos uma matrícula
+        var matriculasExistentes = (await repoMatricula.ObterPorAluno(aluno!.Id)).ToList();
 
-        var matricula = matriculas.First(); // pega a primeira matrícula
+        if (!matriculasExistentes.Any())
+        {
+            var arquivo = Arquivo.Criar(new byte[] { 1, 2, 3 });
+            var matriculaNova = Matricula.Criar(
+                1,
+                aluno,
+                EMatriculaPlano.Semestral,
+                DateOnly.FromDateTime(DateTime.Today),
+                DateOnly.FromDateTime(DateTime.Today.AddMonths(6)),
+                "Emagrecer",
+                EMatriculaRestricoes.Alergias,
+                arquivo,
+                "Sem observações"
+            );
 
+            matriculaNova = await repoMatricula.Adicionar(matriculaNova);
+            matriculasExistentes.Add(matriculaNova);
+        }
+
+        var matricula = matriculasExistentes.First(); // pega a primeira matrícula
         var matriculaPorId = await repoMatricula.ObterPorId(matricula.Id);
+
         Assert.NotNull(matriculaPorId);
         Assert.Equal(matricula.Id, matriculaPorId.Id);
     }
-}
+
+}//Gabriel Coelho Severino

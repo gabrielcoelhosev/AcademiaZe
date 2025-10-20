@@ -1,6 +1,4 @@
-﻿
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace AcademiaDoZe.Domain.Enums;
 
@@ -12,4 +10,4 @@ public enum EColaboradorTipo
     Atendente = 1,
     [Display(Name = "Instrutor")]
     Instrutor = 2
-}
+}//Gabriel Coelho Severino

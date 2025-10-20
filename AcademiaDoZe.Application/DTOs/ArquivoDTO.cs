@@ -1,5 +1,4 @@
 ﻿
-
 namespace AcademiaDoZe.Application.DTOs;
 
 public class ArquivoDTO
@@ -13,3 +12,4 @@ public class ArquivoDTO
     public string? ContentType { get; set; }
 
 }
+//Gabriel Coelho Severino
