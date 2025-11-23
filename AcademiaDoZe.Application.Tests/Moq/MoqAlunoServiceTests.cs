@@ -1,5 +1,4 @@
-﻿
-
+﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Application.DTOs;
 using AcademiaDoZe.Application.Interfaces;
 using Moq;

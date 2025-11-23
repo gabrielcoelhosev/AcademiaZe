@@ -1,5 +1,4 @@
-﻿
-
+﻿//Gabriel Coelho Severino
 using System.ComponentModel.DataAnnotations;
 
 namespace AcademiaDoZe.Domain.Enums;

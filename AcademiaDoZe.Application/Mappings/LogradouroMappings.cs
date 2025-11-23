@@ -1,6 +1,4 @@
-﻿
-
-
+﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Application.DTOs;
 using AcademiaDoZe.Domain.Entities;
 

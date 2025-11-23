@@ -1,5 +1,4 @@
-﻿
-
+﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Domain.Entities;
 using AcademiaDoZe.Domain.Enums;
 using AcademiaDoZe.Domain.Exceptions;

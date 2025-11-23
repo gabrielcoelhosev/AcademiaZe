@@ -1,5 +1,4 @@
-﻿
-
+﻿//Gabriel Coelho Severino
 namespace AcademiaDoZe.Application.Enums;
 
 public enum EAppDatabaseType

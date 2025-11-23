@@ -1,5 +1,4 @@
-﻿
-
+﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Application.Enums;
 
 namespace AcademiaDoZe.Application.DTOs;

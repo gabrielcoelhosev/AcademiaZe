@@ -1,5 +1,4 @@
-﻿
-
+﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Domain.Exceptions;
 using AcademiaDoZe.Domain.Services;
 

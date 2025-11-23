@@ -64,7 +64,11 @@ public abstract class BaseRepository<TEntity> : IRepository<TEntity>, IAsyncDisp
     #region métodos de uso geral, não dependem de dados específicos de cada entidade
     public virtual async Task<TEntity?> ObterPorId(int id)
     {
-        if (id <= 0) { throw new ArgumentException("ID_NAO_INFORMADO_MENOR_UM", nameof(id)); }
+        if (id <= 0)
+        {
+            return null; // ou logar um aviso, se necessário
+        }
+
         try
         {
             await using var connection = await GetOpenConnectionAsync();
@@ -78,8 +82,38 @@ public abstract class BaseRepository<TEntity> : IRepository<TEntity>, IAsyncDisp
             }
             return null;
         }
-        catch (DbException ex) { throw new InvalidOperationException($"ERRO_OBTER_DADOS_ID_{id}", ex); }
+        catch (DbException ex)
+        {
+            throw new InvalidOperationException($"ERRO_OBTER_DADOS_ID_{id}", ex);
+        }
     }
+    //public virtual async Task<TEntity?> ObterPorId(int id)
+    //{
+    //    if (id <= 0)
+    //    {
+    //        throw new ArgumentException("ID_NAO_INFORMADO_MENOR_UM", nameof(id));
+    //    }
+
+    //    try
+    //    {
+    //        await using var connection = await GetOpenConnectionAsync();
+    //        string query = $"SELECT * FROM {TableName} WHERE {IdTableName} = @Id";
+    //        await using var command = DbProvider.CreateCommand(query, connection);
+    //        command.Parameters.Add(DbProvider.CreateParameter("@Id", id, DbType.Int32, _databaseType));
+    //        await using var reader = await command.ExecuteReaderAsync();
+
+    //        if (await reader.ReadAsync())
+    //        {
+    //            return await MapAsync(reader);
+    //        }
+
+    //        return null;
+    //    }
+    //    catch (DbException ex)
+    //    {
+    //        throw new InvalidOperationException($"ERRO_OBTER_DADOS_ID_{id}", ex);
+    //    }
+    //}
     public virtual async Task<IEnumerable<TEntity>> ObterTodos()
     {
         try
@@ -100,6 +134,7 @@ public abstract class BaseRepository<TEntity> : IRepository<TEntity>, IAsyncDisp
     public virtual async Task<bool> Remover(int id)
     {
         if (id <= 0) { throw new ArgumentException("ID_NAO_INFORMADO_MENOR_UM", nameof(id)); }
+        
         try
         {
             await using var connection = await GetOpenConnectionAsync();
