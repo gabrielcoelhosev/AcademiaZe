@@ -1,4 +1,5 @@
-﻿using AcademiaDoZe.Application.DTOs;
+﻿//Gabriel Coelho Severino
+using AcademiaDoZe.Application.DTOs;
 
 namespace AcademiaDoZe.Application.Interfaces;
 
@@ -13,4 +14,3 @@ public interface IMatriculaService
     Task<IEnumerable<MatriculaDTO>> ObterAtivasAsync(int alunoId = 0);
     Task<IEnumerable<MatriculaDTO>> ObterVencendoEmDiasAsync(int dias);
 }
-//Gabriel Coelho Severino

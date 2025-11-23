@@ -1,3 +1,4 @@
+//Gabriel Coelho Severino
 using AcademiaDoZe.Infrastructure.Data;
 
 namespace AcademiaDoZe.Infrastructure.Tests;
@@ -9,21 +10,23 @@ public abstract class TestBase
     protected TestBase()
     {
         //var config = CreateSqlServerConfig();
-        var config = CreateMySqlConfig();
+         var config = CreateMySqlConfig();
         ConnectionString = config.ConnectionString;
         DatabaseType = config.DatabaseType;
     }
-    //private (string ConnectionString, DatabaseType DatabaseType) CreateSqlServerConfig()
-    //{
-    //    var connectionString = "Server=localhost;Database=db_academia_do_ze;User Id=sa;Password=abcBolinhas12345;TrustServerCertificate=True;Encrypt=True;";
+  //  private (string ConnectionString, DatabaseType DatabaseType) CreateSqlServerConfig()
+   // {
+    //    var connectionString = "Server=localhost;Database=db_academia_do_ze;User Id=coelho;Password=abcBolinhas12345;TrustServerCertificate=True;Encrypt=True;";
 
-    //    return (connectionString, DatabaseType.SqlServer);
+ //       return (connectionString, DatabaseType.SqlServer);
 
-    //}
+//    }
+//}
     private (string ConnectionString, DatabaseType DatabaseType) CreateMySqlConfig()
     {
-        var connectionString = "Server=127.0.0.1;Port=3306;Database=db_academia_do_ze_test;Uid=root;Pwd=lilica123;";
+        var connectionString = "Server=localhost,1433;Database=db_academia_do_ze;User Id=root;Password=root;";
+
         return (connectionString, DatabaseType.MySql);
+
     }
 }
-//Gabriel Coelho Severino

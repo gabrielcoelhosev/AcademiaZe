@@ -71,29 +71,23 @@
 	</ItemGroup>
 
 	<ItemGroup>
-<<<<<<< HEAD
 	  <Compile Update="Resources\Strings\AppResources.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
 	    <DependentUpon>AppResources.resx</DependentUpon>
 	  </Compile>
-=======
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 	  <Compile Update="Views\AlunoPage.xaml.cs">
 	    <DependentUpon>AlunoPage.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="Views\AlunoListPage.xaml.cs">
 	    <DependentUpon>AlunoListPage.xaml</DependentUpon>
 	  </Compile>
-<<<<<<< HEAD
 	  <Compile Update="Views\MatriculaPage.xaml.cs">
 	    <DependentUpon>MatriculaPage.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="Views\MatriculaListPage.xaml.cs">
 	    <DependentUpon>MatriculaListPage.xaml</DependentUpon>
 	  </Compile>
-=======
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 	  <Compile Update="Views\DashboardListPage.xaml.cs">
 	    <DependentUpon>DashboardListPage.xaml</DependentUpon>
 	  </Compile>
@@ -115,7 +109,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-<<<<<<< HEAD
 	  <EmbeddedResource Update="Resources\Strings\AppResources.resx">
 	    <Generator>PublicResXFileCodeGenerator</Generator>
 	    <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
@@ -123,23 +116,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
-=======
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 	  <MauiXaml Update="Views\AlunoListPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\AlunoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-<<<<<<< HEAD
 	  <MauiXaml Update="Views\MatriculaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\MatriculaListPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-=======
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 	  <MauiXaml Update="Views\DashboardListPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

@@ -1,4 +1,4 @@
-﻿
+﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Application.DependencyInjection;
 using AcademiaDoZe.Application.Enums;
 using Microsoft.Extensions.DependencyInjection;
@@ -26,4 +26,3 @@ public static class DependencyInjection
         return services.BuildServiceProvider();
     }
 }
-//Gabriel Coelho Severino

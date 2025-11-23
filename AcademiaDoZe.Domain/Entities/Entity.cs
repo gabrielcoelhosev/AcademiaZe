@@ -1,4 +1,5 @@
-﻿using AcademiaDoZe.Domain.Exceptions;
+﻿//Gabriel Coelho Severino
+using AcademiaDoZe.Domain.Exceptions;
 
 namespace AcademiaDoZe.Domain.Entities;
 
@@ -26,4 +27,3 @@ public abstract class Entity
         return (GetType().ToString() + Id).GetHashCode();
     }
 }
-//Gabriel Coelho Severino

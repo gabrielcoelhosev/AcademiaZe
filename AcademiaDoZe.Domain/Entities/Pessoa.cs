@@ -1,4 +1,5 @@
-﻿using AcademiaDoZe.Domain.ValueObjects;
+﻿//Gabriel Coelho Severino
+using AcademiaDoZe.Domain.ValueObjects;
 
 namespace AcademiaDoZe.Domain.Entities;
 
@@ -29,4 +30,4 @@ public abstract class Pessoa : Entity
         Senha = senha;
         Foto = foto;
     }
-}//Gabriel Coelho Severino
+}

@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 ﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Domain.Entities;
-=======
-﻿using AcademiaDoZe.Domain.Entities;
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 
 namespace AcademiaDoZe.Domain.Repositories;
 

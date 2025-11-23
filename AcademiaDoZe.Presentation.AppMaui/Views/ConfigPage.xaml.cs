@@ -11,21 +11,15 @@ public partial class ConfigPage : ContentPage
         InitializeComponent();
         CarregarTema();
         CarregarBanco();
-<<<<<<< HEAD
         CarregarCultura();
-=======
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 
         // Assina o evento SelectedIndexChanged do TemaPicker
         // Utilizando o tratador OnSalvarTemaClicked já existente
         TemaPicker.SelectedIndexChanged += OnSalvarTemaClicked;
 
-<<<<<<< HEAD
         // Assina o evento SelectedIndexChanged do CulturaPicker, utilizando o tratador OnSalvarCulturaClicked já existente
         CulturaPicker.SelectedIndexChanged += OnSalvarCulturaClicked;
 
-=======
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
         // inicializa a ordem de foco dos controles
         _focusOrder = [
         DatabaseTypePicker, ServidorEntry, BancoEntry, UsuarioEntry, SenhaEntry, ComplementoEntry ];
@@ -63,31 +57,6 @@ public partial class ConfigPage : ContentPage
         // Navegar para dashboard
         await Shell.Current.GoToAsync("//dashboard");
 
-    }
-
-    private void OnEntryCompleted(object sender, EventArgs e)
-    {
-        if (sender is not VisualElement current)
-            return;
-        int idx = Array.IndexOf(_focusOrder, current);
-        if (idx >= 0)
-        {
-            if (idx < _focusOrder.Length - 1)
-            {
-                // foca o próximo controle
-                _focusOrder[idx + 1].Focus();
-            }
-            else
-            {
-                // último item -> submete
-                OnSalvarBdClicked(sender, e);
-            }
-        }
-        else
-        {
-            // fallback simples: avançar para o primeiro focável se não estiver na lista
-            _focusOrder.FirstOrDefault()?.Focus();
-        }
     }
 
     private void OnEntryCompleted(object sender, EventArgs e)

@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 ﻿//Gabriel Coelho Severino
 using System.ComponentModel.DataAnnotations;
-=======
-﻿using System.ComponentModel.DataAnnotations;
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 
 namespace AcademiaDoZe.Domain.Enums;
 
@@ -17,4 +13,4 @@ public enum EMatriculaPlano
     Semestral = 2,
     [Display(Name = "Anual")]
     Anual = 3
-}//Gabriel Coelho Severino
+}

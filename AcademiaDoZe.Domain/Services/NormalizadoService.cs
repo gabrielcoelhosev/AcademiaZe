@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿//Gabriel Coelho Severino
+using System.Text.RegularExpressions;
 
 namespace AcademiaDoZe.Domain.Services;
 
@@ -29,4 +30,3 @@ public static partial class NormalizadoService
     [GeneratedRegex(@"\s+")]
     private static partial Regex EspacosRegex();
 }
-//Gabriel Coelho Severino

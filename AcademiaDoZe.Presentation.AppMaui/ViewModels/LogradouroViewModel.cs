@@ -200,4 +200,3 @@ namespace AcademiaDoZe.Presentation.AppMaui.ViewModels
 
     }
 }
-//Gabriel Coelho Severino

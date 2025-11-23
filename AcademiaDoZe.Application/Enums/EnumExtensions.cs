@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ﻿//Gabriel Coelho Severino
-=======
-﻿
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
@@ -21,4 +17,3 @@ public static class EnumExtensions
 }
 // Console.WriteLine( EMatriculaRestricoes.ProblemasRespiratorios.GetDisplayName() );
 // Exibe: Problemas Respiratórios
-//Gabriel Coelho Severino

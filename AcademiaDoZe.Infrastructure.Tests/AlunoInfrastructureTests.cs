@@ -1,4 +1,4 @@
-﻿//Roberto Antunes Souza
+﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Domain.Entities;
 using AcademiaDoZe.Domain.ValueObjects;
 using AcademiaDoZe.Infrastructure.Repositories;

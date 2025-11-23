@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 ﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Domain.Entities;
-=======
-﻿using AcademiaDoZe.Domain.Entities;
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 using AcademiaDoZe.Domain.Enums;
 using AcademiaDoZe.Domain.Exceptions;
 using AcademiaDoZe.Domain.ValueObjects;
@@ -71,4 +67,4 @@ public class MatriculaDomainTests
 
         Assert.Equal("OBJETIVO_OBRIGATORIO", exception.Message);
     }
-}//Gabriel Coelho Severino
+}

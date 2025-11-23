@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿//Gabriel Coelho Severino
+using System.ComponentModel.DataAnnotations;
 namespace AcademiaDoZe.Application.Enums;
 
 public enum EAppPessoaTipo
@@ -8,4 +9,3 @@ public enum EAppPessoaTipo
     [Display(Name = "Aluno")]
     Aluno = 1
 }
-//Gabriel Coelho Severino

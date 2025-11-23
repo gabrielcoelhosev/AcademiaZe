@@ -1,4 +1,5 @@
-﻿using AcademiaDoZe.Application.DTOs;
+﻿//Gabriel Coelho Severino
+using AcademiaDoZe.Application.DTOs;
 using AcademiaDoZe.Application.Enums;
 using AcademiaDoZe.Application.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
@@ -8,9 +9,7 @@ namespace AcademiaDoZe.Application.Tests;
 public class LogradouroApplicationTests
 {
     // Configurações de conexão
-    const string connectionString = "Server=127.0.0.1;Port=3306;Database=db_academia_do_ze_test;Uid=root;Pwd=lilica123;";
-
-
+    const string connectionString = "Server=localhost;Database=db_academia_do_ze;User Id=root;Password=root;";
     const EAppDatabaseType databaseType = EAppDatabaseType.MySql;
     [Fact(Timeout = 60000)]
     public async Task LogradouroService_Integracao_Adicionar_Obter_Atualizar_Remover()
@@ -91,4 +90,3 @@ public class LogradouroApplicationTests
         }
     }
 }
-//Gabriel Coelho Severino

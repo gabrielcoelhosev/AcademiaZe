@@ -18,10 +18,7 @@ namespace AcademiaDoZe.Presentation.AppMaui
             Routing.RegisterRoute("logradouro", typeof(LogradouroPage));
             Routing.RegisterRoute("colaborador", typeof(ColaboradorPage));
             Routing.RegisterRoute("aluno", typeof(AlunoPage));
-<<<<<<< HEAD
             Routing.RegisterRoute("matricula", typeof(MatriculaPage));
-=======
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
         }
     }
 }

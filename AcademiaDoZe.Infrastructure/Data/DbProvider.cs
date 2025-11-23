@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 ﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Infrastructure.Exceptions;
-=======
-﻿using AcademiaDoZe.Infrastructure.Exceptions;
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 using Microsoft.Data.SqlClient;
 using MySql.Data.MySqlClient;
 using System.Data;
@@ -61,4 +57,4 @@ public static class DbProvider
         }
         catch (DbException ex) { throw new InfrastructureException($"ERRO_CRIAR_PARAMETRO", ex); }
     }
-}//Gabriel Coelho Severino
+}

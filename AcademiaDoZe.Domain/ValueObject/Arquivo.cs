@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 ﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Domain.Exceptions;
-=======
-﻿using AcademiaDoZe.Domain.Exceptions;
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 using AcademiaDoZe.Domain.Services;
 
 namespace AcademiaDoZe.Domain.ValueObjects;

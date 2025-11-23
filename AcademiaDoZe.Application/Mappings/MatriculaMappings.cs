@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 ﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Application.DTOs;
-=======
-﻿using AcademiaDoZe.Application.DTOs;
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 using AcademiaDoZe.Domain.Entities;
 using AcademiaDoZe.Domain.ValueObjects;
 namespace AcademiaDoZe.Application.Mappings;
@@ -54,4 +50,3 @@ public static class MatriculaMappings
         );
     }
 }
-//Gabriel Coelho Severino

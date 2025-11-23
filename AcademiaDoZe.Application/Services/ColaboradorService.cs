@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 ﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Application.DTOs;
-=======
-﻿using AcademiaDoZe.Application.DTOs;
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 using AcademiaDoZe.Application.Interfaces;
 using AcademiaDoZe.Application.Mappings;
 using AcademiaDoZe.Domain.Repositories;
@@ -122,4 +118,3 @@ public class ColaboradorService : IColaboradorService
 
     }
 }
-//Gabriel Coelho Severino

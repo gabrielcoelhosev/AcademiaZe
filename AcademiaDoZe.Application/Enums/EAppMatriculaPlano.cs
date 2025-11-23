@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿//Gabriel Coelho Severino
+using System.ComponentModel.DataAnnotations;
 namespace AcademiaDoZe.Application.Enums;
 
 public enum EAppMatriculaPlano
@@ -12,4 +13,3 @@ public enum EAppMatriculaPlano
     [Display(Name = "Anual")]
     Anual = 3
 }
-//Gabriel Coelho Severino

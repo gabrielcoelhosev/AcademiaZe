@@ -1,4 +1,4 @@
-﻿//Gabriel Coelho Severino da Cruz Velho
+﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Domain.Entities;
 using AcademiaDoZe.Domain.Enums;
 using AcademiaDoZe.Domain.Repositories;
@@ -186,4 +186,3 @@ public class AlunoRepository : BaseRepository<Aluno>, IAlunoRepository
         }
     }
 }
-//Gabriel Coelho Severino

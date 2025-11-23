@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 ﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Application.DTOs;
-=======
-﻿using AcademiaDoZe.Application.DTOs;
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 using AcademiaDoZe.Domain.Entities;
 
 namespace AcademiaDoZe.Application.Mappings;
@@ -48,4 +44,3 @@ public static class LogradouroMappings
         logradouroDto.Pais ?? logradouro.Pais);
     }
 }
-//Gabriel Coelho Severino

@@ -1,4 +1,5 @@
-﻿using AcademiaDoZe.Application.DTOs;
+﻿//Gabriel Coelho Severino
+using AcademiaDoZe.Application.DTOs;
 
 namespace AcademiaDoZe.Application.Interfaces;
 
@@ -12,4 +13,3 @@ public interface ILogradouroService
     Task<LogradouroDTO> ObterPorCepAsync(string cep);
     Task<IEnumerable<LogradouroDTO>> ObterPorCidadeAsync(string cidade);
 }
-//Gabriel Coelho Severino

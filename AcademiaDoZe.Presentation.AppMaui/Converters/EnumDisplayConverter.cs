@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
@@ -70,18 +69,3 @@ namespace AcademiaDoZe.Presentation.AppMaui.Converters
             => throw new NotImplementedException();
     }
 }
-=======
-﻿using AcademiaDoZe.Application.Enums;
-using System.Globalization;
-namespace AcademiaDoZe.Presentation.AppMaui.Converters
-{
-    // Converte qualquer Enum para o Display(Name)
-    public sealed class EnumDisplayConverter : IValueConverter
-    {
-        public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
-        => value is Enum e ? e.GetDisplayName() : string.Empty;
-        public object? ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture)
-        => throw new NotSupportedException();
-    }
-}
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65

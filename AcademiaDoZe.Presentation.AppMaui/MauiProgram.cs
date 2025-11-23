@@ -39,11 +39,8 @@ namespace AcademiaDoZe.Presentation.AppMaui
             builder.Services.AddTransient<ColaboradorViewModel>();
             builder.Services.AddTransient<AlunoListViewModel>();
             builder.Services.AddTransient<AlunoViewModel>();
-<<<<<<< HEAD
             builder.Services.AddTransient<MatriculaListViewModel>();
             builder.Services.AddTransient<MatriculaViewModel>();
-=======
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
             // Registrar Views
             builder.Services.AddTransient<DashboardListPage>();
             builder.Services.AddTransient<LogradouroListPage>();
@@ -53,11 +50,8 @@ namespace AcademiaDoZe.Presentation.AppMaui
             builder.Services.AddTransient<ColaboradorPage>();
             builder.Services.AddTransient<AlunoListPage>();
             builder.Services.AddTransient<AlunoPage>();
-<<<<<<< HEAD
             builder.Services.AddTransient<MatriculaListPage>();
             builder.Services.AddTransient<MatriculaPage>();
-=======
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 #if DEBUG
             builder.Logging.AddDebug();
 #endif
@@ -65,5 +59,3 @@ namespace AcademiaDoZe.Presentation.AppMaui
         }
     }
 }
-//Gabriel Coelho Severino
-//repositorio git  https://github.com/LeandroJader/AcademiaZe

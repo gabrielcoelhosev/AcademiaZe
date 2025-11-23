@@ -1,4 +1,5 @@
-﻿using AcademiaDoZe.Domain.Entities;
+﻿//Gabriel Coelho Severino
+using AcademiaDoZe.Domain.Entities;
 
 namespace AcademiaDoZe.Domain.Repositories;
 
@@ -15,4 +16,3 @@ public interface IRepository<TEntity> where TEntity : Entity
     Task<TEntity> Atualizar(TEntity entity);
     Task<bool> Remover(int id);
 }
-//Gabriel Coelho Severino

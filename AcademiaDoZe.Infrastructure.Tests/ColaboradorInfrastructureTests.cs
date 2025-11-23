@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ﻿//Gabriel Coelho Severino
-=======
-﻿
->>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 using AcademiaDoZe.Domain.Entities;
 using AcademiaDoZe.Domain.Enums;
 using AcademiaDoZe.Domain.ValueObjects;
@@ -145,4 +141,3 @@ public class ColaboradorInfrastructureTests : TestBase
         Assert.NotNull(resultado);
     }
 }
-//Gabriel Coelho Severino
