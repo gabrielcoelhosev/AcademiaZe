@@ -1,5 +1,4 @@
-﻿//Gabriel Coelho Severino
-using AcademiaDoZe.Domain.Entities;
+﻿using AcademiaDoZe.Domain.Entities;
 using AcademiaDoZe.Domain.Repositories;
 using AcademiaDoZe.Infrastructure.Data;
 using AcademiaDoZe.Infrastructure.Exceptions;
@@ -153,3 +152,4 @@ public abstract class BaseRepository<TEntity> : IRepository<TEntity>, IAsyncDisp
     protected abstract Task<TEntity> MapAsync(DbDataReader reader);
     #endregion#region métodos de uso geral, não dependem de dados específicos de cada entidade
 }
+//Gabriel Coelho Severino

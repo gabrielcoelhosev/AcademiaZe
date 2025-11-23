@@ -1,5 +1,4 @@
-﻿//Gabriel Coelho Severino
-using AcademiaDoZe.Application.Enums;
+﻿using AcademiaDoZe.Application.Enums;
 namespace AcademiaDoZe.Application.DependencyInjection;
 
 public class RepositoryConfig
@@ -7,3 +6,4 @@ public class RepositoryConfig
     public required string ConnectionString { get; set; }
     public required EAppDatabaseType DatabaseType { get; set; }
 }
+//Gabriel Coelho Severino

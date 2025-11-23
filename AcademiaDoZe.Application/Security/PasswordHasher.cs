@@ -1,5 +1,4 @@
-﻿//Gabriel Coelho Severino
-using Konscious.Security.Cryptography;
+﻿using Konscious.Security.Cryptography;
 using System.Security.Cryptography;
 using System.Text;
 namespace AcademiaDoZe.Application.Security;
@@ -60,3 +59,4 @@ public class PasswordHasher
         return CryptographicOperations.FixedTimeEquals(actual, expected);
     }
 }
+//Gabriel Coelho Severino

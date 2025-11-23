@@ -1,5 +1,4 @@
-﻿//Gabriel Coelho Severino
-using AcademiaDoZe.Domain.Entities;
+﻿using AcademiaDoZe.Domain.Entities;
 using AcademiaDoZe.Domain.Exceptions;
 using AcademiaDoZe.Domain.ValueObjects;
 
@@ -46,4 +45,4 @@ public class ColaboradorDomainTests
         ));
         Assert.Equal("NOME_OBRIGATORIO", exception.Message);
     }
-}
+}//Gabriel Coelho Severino

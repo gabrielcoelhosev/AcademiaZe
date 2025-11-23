@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Domain.Enums;
+=======
+﻿using AcademiaDoZe.Domain.Enums;
+>>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 using AcademiaDoZe.Domain.Exceptions;
 using AcademiaDoZe.Domain.Services;
 using AcademiaDoZe.Domain.ValueObjects;
@@ -60,3 +64,4 @@ public class Colaborador : Pessoa
             dataAdmissao, tipo, vinculo);
     }
 }
+//Gabriel Coelho Severino

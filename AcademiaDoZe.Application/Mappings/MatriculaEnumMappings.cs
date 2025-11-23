@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Application.Enums;
+=======
+﻿using AcademiaDoZe.Application.Enums;
+>>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 using AcademiaDoZe.Domain.Enums;
 
 namespace AcademiaDoZe.Application.Mappings;
@@ -23,3 +27,4 @@ public static class MatriculaEnumMappings
         return (EAppMatriculaRestricoes)domainRestricoes;
     }
 }
+//Gabriel Coelho Severino

@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Application.Interfaces;
+=======
+﻿using AcademiaDoZe.Application.Interfaces;
+>>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 using AcademiaDoZe.Application.Services;
 using AcademiaDoZe.Application_.Services;
 using AcademiaDoZe.Domain.Repositories;
@@ -49,3 +53,4 @@ public static class ApplicationDependencyInjection
         return services;
     }
 }
+//Gabriel Coelho Severinojader

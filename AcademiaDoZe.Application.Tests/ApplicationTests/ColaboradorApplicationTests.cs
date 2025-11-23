@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿//Gabriel Coelho Severino
 using AcademiaDoZe.Application.DTOs;
+=======
+﻿using AcademiaDoZe.Application.DTOs;
+>>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 using AcademiaDoZe.Application.Enums;
 using AcademiaDoZe.Application.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
@@ -9,7 +13,8 @@ namespace AcademiaDoZe.Application.Tests;
 public class ColaboradorApplicationTests
 {
     // Configurações de conexão
-    const string connectionString = "Server=localhost;Database=db_academia_do_ze;User Id=root;Password=root;";
+      const string connectionString = "Server=127.0.0.1;Port=3306;Database=db_academia_do_ze_test;Uid=root;Pwd=lilica123;";
+
     const EAppDatabaseType databaseType = EAppDatabaseType.MySql;
     [Fact(Timeout = 60000)]
     public async Task ColaboradorService_Integracao_Adicionar_Obter_Atualizar_Remover()
@@ -112,4 +117,4 @@ public class ColaboradorApplicationTests
         var rnd = new Random();
         return string.Concat(Enumerable.Range(0, 11).Select(_ => rnd.Next(0, 10).ToString()));
     }
-}
+}//Gabriel Coelho Severino

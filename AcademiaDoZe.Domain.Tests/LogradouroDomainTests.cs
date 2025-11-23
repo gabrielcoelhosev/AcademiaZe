@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 //Gabriel Coelho Severino
+=======
+>>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 using AcademiaDoZe.Domain.Entities;
 using AcademiaDoZe.Domain.Exceptions;
 
@@ -36,4 +39,4 @@ public class LogradouroDomainTests
         var exception = Assert.Throws<DomainException>(() => Logradouro.Criar(4, "12345670", "", "Centro", "Cidade", "SP", "Brasil"));
         Assert.Equal("NOME_OBRIGATORIO", exception.Message); // validando a mensagem de exceção
     }
-}
+}//Gabriel Coelho Severino

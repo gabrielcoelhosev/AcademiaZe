@@ -1,5 +1,4 @@
-﻿//Gabriel Coelho Severino
-using AcademiaDoZe.Application.DTOs;
+﻿using AcademiaDoZe.Application.DTOs;
 using AcademiaDoZe.Application.Interfaces;
 using Moq;
 
@@ -202,3 +201,4 @@ new LogradouroDTO {Id = 2, Cep = "87654321", Nome = "Rua Teste 2", Bairro = "Bel
         _logradouroServiceMock.Verify(s => s.ObterPorCidadeAsync(cidade), Times.Once);
     }
 }
+//Gabriel Coelho Severino

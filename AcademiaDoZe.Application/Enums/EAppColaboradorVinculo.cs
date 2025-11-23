@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿//Gabriel Coelho Severino
 using System.ComponentModel.DataAnnotations;
+=======
+﻿using System.ComponentModel.DataAnnotations;
+>>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 namespace AcademiaDoZe.Application.Enums;
 
 public enum EAppColaboradorVinculo
@@ -9,3 +13,4 @@ public enum EAppColaboradorVinculo
     [Display(Name = "Estagiário")]
     Estagio = 1
 }
+//Gabriel Coelho Severino

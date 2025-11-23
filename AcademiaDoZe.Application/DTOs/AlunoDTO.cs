@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 ﻿//Gabriel Coelho Severino
 
 
 namespace AcademiaDoZe.Application.DTOs;
+=======
+﻿namespace AcademiaDoZe.Application.DTOs;
+>>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 
 public class AlunoDTO
 {
@@ -17,3 +21,4 @@ public class AlunoDTO
     public string? Senha { get; set; }
     public ArquivoDTO? Foto { get; set; }
 }
+//Gabriel Coelho Severino

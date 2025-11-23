@@ -5,14 +5,20 @@ x:Class="AcademiaDoZe.Presentation.AppMaui.Views.ColaboradorPage"
 xmlns:vm="clr-namespace:AcademiaDoZe.Presentation.AppMaui.ViewModels"
 xmlns:enums="clr-namespace:AcademiaDoZe.Application.Enums;assembly=AcademiaDoZe.Application"
 xmlns:converters="clr-namespace:AcademiaDoZe.Presentation.AppMaui.Converters"
+<<<<<<< HEAD
              xmlns:helpers="clr-namespace:AcademiaDoZe.Presentation.AppMaui.Helpers"
+=======
+>>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 x:DataType="vm:ColaboradorViewModel"
 Title="{Binding Title}">
     <ContentPage.Resources>
         <converters:FotoToImageSourceConverter x:Key="FotoToImageSourceConverter" />
         <converters:DateOnlyToDateTimeConverter x:Key="DateOnlyConverter" />
         <converters:EnumDisplayConverter x:Key="EnumDisplay" />
+<<<<<<< HEAD
         <helpers:LocalizationManager x:Key="LocalizationManager" />
+=======
+>>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
     </ContentPage.Resources>
     <ScrollView>
         <StackLayout Spacing="20">
@@ -44,8 +50,12 @@ Title="{Binding Title}">
                     </StackLayout>
                     <StackLayout Spacing="5">
                         <Label Text="Data de Nascimento"/>
+<<<<<<< HEAD
                         <DatePicker Format="{Binding Source={StaticResource LocalizationManager}, Path=FormatoDataCurta}"
                             Date="{Binding Colaborador.DataNascimento, Converter={StaticResource DateOnlyConverter}, Mode=TwoWay}"/>
+=======
+                        <DatePicker Date="{Binding Colaborador.DataNascimento, Converter={StaticResource DateOnlyConverter}, Mode=TwoWay}"/>
+>>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
                     </StackLayout>
                     <StackLayout Spacing="5">
                         <Label Text="Telefone"/>
@@ -80,7 +90,10 @@ Title="{Binding Title}">
                             </Button.ImageSource>
                         </Button>
                     </StackLayout>
+<<<<<<< HEAD
                     
+=======
+>>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
                 </StackLayout>
             </Border>
             <!-- Endereço -->
@@ -130,8 +143,12 @@ Title="{Binding Title}">
                     <Label Text="Dados de Trabalho" Style="{StaticResource SubHeadline}"/>
                     <StackLayout Spacing="5">
                         <Label Text="Data de Admissão"/>
+<<<<<<< HEAD
                         <DatePicker Format="{Binding Source={StaticResource LocalizationManager}, Path=FormatoDataCurta}"
                             Date="{Binding Colaborador.DataAdmissao, Converter={StaticResource DateOnlyConverter}, Mode=TwoWay}"/>
+=======
+                        <DatePicker Date="{Binding Colaborador.DataAdmissao, Converter={StaticResource DateOnlyConverter}, Mode=TwoWay}"/>
+>>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
                     </StackLayout>
                     <StackLayout Spacing="5">
                         <Label Text="Tipo"/>

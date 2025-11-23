@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿//Gabriel Coelho Severino
+=======
+﻿
+>>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
 using AcademiaDoZe.Domain.Entities;
 using AcademiaDoZe.Infrastructure.Repositories;
 using AcademiaDoZe.Infrastructure.Tests;
@@ -93,3 +97,4 @@ public class LogradouroInfrastructureTests : TestBase
         Assert.NotNull(resultado);
     }
 }
+//Gabriel Coelho Severino

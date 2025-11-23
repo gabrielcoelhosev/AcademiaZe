@@ -21,17 +21,34 @@ Title="{Binding Path=[strTitulo], Source={StaticResource LocalizedStrings}}">   
         </FlyoutItem.Icon>
         <ShellContent ContentTemplate="{DataTemplate views:DashboardListPage}" Route="dashboard" />
     </FlyoutItem>
+<<<<<<< HEAD
     <FlyoutItem Title="{Binding Path=[strAluno], Source={StaticResource LocalizedStrings}}">
+=======
+    <FlyoutItem Title="Alunos">
+>>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
         <FlyoutItem.Icon>
             <FontImageSource FontFamily="MaterialIcons" Glyph="&#xea1d;" />
         </FlyoutItem.Icon>
         <ShellContent ContentTemplate="{DataTemplate views:AlunoListPage}" Route="alunos" />
     </FlyoutItem>
+<<<<<<< HEAD
     <FlyoutItem Title="{Binding Path=[strLogradouro], Source={StaticResource LocalizedStrings}}">
+=======
+    <FlyoutItem Title="Logradouros">
+>>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
         <FlyoutItem.Icon>
             <FontImageSource FontFamily="MaterialIcons" Glyph="&#xe88a;" />
         </FlyoutItem.Icon>
         <ShellContent ContentTemplate="{DataTemplate views:LogradouroListPage}" Route="logradouros"/>
+<<<<<<< HEAD
+=======
+    </FlyoutItem>
+    <FlyoutItem Title="Colaboradores">
+        <FlyoutItem.Icon>
+            <FontImageSource FontFamily="MaterialIcons" Glyph="&#xe7ef;" />
+        </FlyoutItem.Icon>
+        <ShellContent ContentTemplate="{DataTemplate views:ColaboradorListPage}" Route="colaboradores" />
+>>>>>>> df0a73ee51b361b095f201897a83dfe9089cce65
     </FlyoutItem>
     <FlyoutItem Title="{Binding Path=[strColaborador], Source={StaticResource LocalizedStrings}}">
         <FlyoutItem.Icon>

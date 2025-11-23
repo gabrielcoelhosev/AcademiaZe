@@ -1,5 +1,4 @@
-﻿//Gabriel Coelho Severino
-namespace AcademiaDoZe.Application.DTOs;
+﻿namespace AcademiaDoZe.Application.DTOs;
 
 public class LogradouroDTO
 {
@@ -11,3 +10,4 @@ public class LogradouroDTO
     public required string Estado { get; set; }
     public required string Pais { get; set; }
 }
+//Gabriel Coelho Severino
